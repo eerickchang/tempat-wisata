@@ -1,0 +1,334 @@
+:root {
+  --primary: #151515;
+  --secondary: #c7ffb4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary);
+  color: #fff;
+  /* min-height: 6000px; */
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Navbar Section */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem 7%;
+  background-color: #2d2d2d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.navbar .logo span,
+.destinasi h2 span,
+.paket h2 span,
+.testimoni h2 span,
+.kontak h2 span {
+  color: var(--secondary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0 2rem;
+}
+
+.navbar .navbar-nav a:hover,
+.navbar .navbar-extra a:hover {
+  color: var(--secondary);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0rem 7%;
+}
+
+.hero .content {
+  max-width: 60rem;
+  margin-right: 8%;
+}
+
+.hero .content h2 {
+  font-size: 5rem;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+.hero .content h2 span {
+  color: var(--secondary);
+}
+
+.hero .content p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.hero .content .cta {
+  background-color: var(--secondary);
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 5%;
+}
+
+.hero img {
+  width: 40rem;
+  border-radius: 10%;
+}
+
+/* Destinasi Section */
+.destinasi,
+.paket,
+.testimoni,
+.kontak {
+  text-align: center;
+  padding: 7rem 7%;
+}
+
+.destinasi h2,
+.paket h2,
+.testimoni h2,
+.kontak h2 {
+  font-size: 2rem;
+}
+
+.destinasi .row,
+.kontak .content {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.destinasi .row .card {
+  margin: 0rem 3rem 3rem;
+}
+
+.destinasi .row .card img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 10%;
+}
+
+/* Paket Section */
+.paket .content,
+.testimoni .content {
+  display: flex;
+  margin-top: 4rem;
+}
+
+.paket .content img {
+  width: 30rem;
+  border-radius: 10%;
+}
+
+.paket .content .column,
+.testimoni .content .column {
+  text-align: start;
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.paket .content .column .nama-paket {
+  font-size: 2rem;
+}
+
+.paket .content .column .harga {
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.paket .content .column .arrow {
+  text-align: end;
+}
+
+.paket .content .column .arrow a {
+  color: #fff;
+  margin: 2rem 1rem;
+}
+
+.paket .content .column .arrow a:hover {
+  color: var(--secondary);
+}
+
+/* Testimoni Section */
+.testimoni .content {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimoni .content .card {
+  max-width: 40rem;
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.testimoni .content .card img {
+  height: 20rem;
+}
+
+.testimoni .content .card .column .fill-star {
+  color: var(--secondary);
+}
+
+.testimoni .content .card .column {
+  margin-right: 4rem;
+  background-color: #2d2d2d;
+  margin-left: 0;
+  padding: 2rem 3rem 2rem 2rem;
+}
+
+/* Kontak Section */
+.kontak .content {
+  display: flex;
+  margin-top: 6rem;
+}
+
+.kontak .content img {
+  width: 45rem;
+}
+
+.kontak .content .column {
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6rem 3rem;
+  text-align: start;
+}
+
+.kontak .content .column h3 {
+  font-size: 2rem;
+}
+
+.kontak .content .column .sosmed a {
+  color: #fff;
+}
+
+.kontak .content .column .sosmed a:hover {
+  color: var(--secondary);
+}
+
+/* Footer Section */
+footer {
+  background-color: #2d2d2d;
+  text-align: center;
+  margin-top: 5rem;
+  padding: 3rem 0;
+}
+
+footer p a {
+  color: var(--secondary);
+  font-weight: 800;
+}
+
+footer .title {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+footer .subtitle {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: block;
+  }
+
+  .hero .content h2 {
+    font-size: 3.5rem;
+  }
+
+  .hero .content p {
+    font-size: 1.2rem;
+  }
+
+  .hero img {
+    width: 30rem;
+  }
+
+  .hero .content .cta {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    background-color: #2d2d2d;
+    width: 30rem;
+    height: 100vh;
+    right: -100%;
+    top: 100%;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+    transition: 0.3s;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
